@@ -1,0 +1,100 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit&display=swap');
+
+:root {
+    --verydarkblue-main: hsl(217, 54%, 11%);
+    --verydarkblue-card: hsl(216, 50%, 16%);
+    --verydarkblue-line: hsl(215, 32%, 27%);
+}
+
+body {
+    background: var(--verydarkblue-main);
+    font-family: 'Outfit';
+}
+.mainbody {
+    display: grid;
+    place-items: center;
+    min-height: 100vh;
+}
+.main {
+    width: 400px;
+    padding: 25px;
+    border-radius: 15px;
+    background: var(--verydarkblue-card);
+}
+.imageContainer {
+    width: 400px;
+    height: 400px;
+    position: relative;
+    cursor: pointer;
+    display: grid;
+    place-items: center;
+}
+.imageoverlay {
+    position: absolute;
+    opacity: 0;
+    width: 400px;
+    height: 400px;
+    border-radius: 15px;
+    background: #00FFF8;
+    display: grid;
+    place-items: center;
+}
+.imageContainer img {
+    width: 400px;
+    height: 400px;
+    border-radius: 15px;
+}
+.imageContainer:hover .imageoverlay {
+    opacity: 0.5;
+}
+.title {
+    color: white;
+}
+.title:hover {
+    cursor: pointer;
+    color: #00FFF8;
+}
+.desc {
+    font-size: 28px;
+    color: #7794bd;
+}
+.info {
+    display: flex;
+    justify-content: space-between;
+}
+.eth {
+    font-size: 20px;
+    color: #00FFF8;
+}
+.time {
+    font-size: 20px;
+    color: #8BACD9;
+}
+hr {
+    color: var(--verydarkblue-line);
+    border: 1px solid var(--verydarkblue-line);
+}
+.author {
+    display: flex;
+    align-items: center;
+}
+.author img {
+    width: 40px;
+    margin-top: 10px;
+    margin-right: 10px;
+    outline: 2px solid white;
+    border-radius: 50%;
+}
+.author p {
+    font-size: 20px;
+}
+.text-1 {
+    color: #7794bd;
+}
+.text-2 {
+    color: white;
+}
+.text-2:hover {
+    cursor: pointer;
+    color: #00FFF8;
+}
